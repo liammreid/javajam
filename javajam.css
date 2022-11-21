@@ -24,6 +24,7 @@ header {
 	padding-left: 105px;
 	padding-top: 5px;
 	padding-bottom: 5px;
+
 }
 
 header a {
@@ -51,8 +52,7 @@ h2 {
 	color: #8C3826;
 }
 
-h3,
-dt {
+h3,dt {
 	color: #8C3826;
 }
 
@@ -87,9 +87,10 @@ nav a:hover {
 	color: #CC9933;
 }
 
+/* To ensure clickable menu buttons, change the following on nav ul, nav li, and nav li a */
 nav ul {
-	display: flex;
-	flex-direction: column;
+	/* display: flex;
+	flex-direction: column; */
 	font-size: 1.25em;
 	list-style-type: none;
 	margin: 0;
@@ -98,8 +99,14 @@ nav ul {
 
 nav li {
 	border-bottom: 1px solid #FEF6C2;
+	/* padding: .5em 1em;
+	width: 100%; */
+}
+
+nav li a {
+	display: flex;
+	flex-direction: column;
 	padding: .5em 1em;
-	width: 100%;
 }
 
 main {
@@ -108,13 +115,7 @@ main {
 	padding: 0 0 2em 0;
 }
 
-h2,
-h3,
-h4,
-p,
-div,
-ul,
-dl {
+h2,h3,h4,p,div,ul,dl {
 	padding-left: 1em;
 	padding-right: 1em;
 }
@@ -163,6 +164,13 @@ img {
 	background-size: 100% 100%;
 }
 
+#herocouch {
+	height: 300px;
+	background-image: url(images/herocouch.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
 #mobile {
 	display: inline;
 }
@@ -186,8 +194,7 @@ table {
 	border-spacing: 0;
 }
 
-th,
-td {
+th,td {
 	padding: 10px;
 }
 
@@ -202,9 +209,26 @@ form {
 	width: 80%;
 }
 
-input,
-textarea {
+input,textarea {
 	margin-bottom: .5em;
+}
+
+.item {
+	background-color: #FAF9F7;
+	margin: 1em;
+	padding: 1em;
+	overflow: auto;
+}
+
+.item img {
+	float: right;
+}
+
+.current {
+	text-transform: uppercase;
+	/* text-decoration-line: underline; */
+	/* text-decoration-style: double; */
+	background-color: #776655;
 }
 
 /* Configure Medium Layout */
